@@ -1,16 +1,49 @@
-# React + Vite
+# 🇸🇪 SvenskDaglig
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered Swedish language learning app for intermediate learners. Paste any Swedish text to get instant sentence-by-sentence analysis, or practice conversational Swedish with an AI tutor.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Text Analyzer**
+- Paste any Swedish text — news articles, book excerpts, subtitles, anything
+- Every sentence is broken down with an English translation, vocabulary above A2 level (tagged B1/B2/C1), a grammar explanation, and useful related phrases
 
-## React Compiler
+**Conversation Tutor**
+- Chat freely in Swedish with an AI tutor
+- Get gentle corrections when you make mistakes, with explanations of why
+- Tutor suggests more natural and advanced phrasing as you progress
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React + Vite
+- Gemini 2.5 Pro API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+1. Clone the repo
+   ```bash
+   git clone https://github.com/zengeg/svensk-daglig.git
+   cd svensk-daglig
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Add your Gemini API key — create a `.env` file in the root:
+   ```
+   VITE_GEMINI_KEY=your_api_key_here
+   ```
+   Get a free key at [aistudio.google.com](https://aistudio.google.com)
+
+4. Start the dev server
+   ```bash
+   npm run dev
+   ```
+
+5. Open `http://localhost:5173`
+
+## Target User
+
+Designed for Swedish learners at A2 level working toward B2/C1. The analyzer focuses on vocabulary and grammar points that are most useful for intermediate learners making the jump to advanced.
